@@ -1,0 +1,197 @@
+/*---------------------------------------
+-------------top------------------------*/
+
+/*background-size literally scales the image*/
+
+.jumbotron{
+    background: #ffffff url("images/no.jpg") repeat;
+    background-size:300px;
+    height:170px;
+}
+
+.jumbotron .h2specific {
+    color:pink;
+    font-size: 30px;
+    text-align: center;
+    position:relative;
+    height:100px;
+}
+
+/*line-height to decrease space between paragraphs*/
+
+.jumbotron .pspecific{
+    line-height: 10px;
+    color:pink;
+    text-align:center;
+    font-size:25px;
+    position: relative;
+}
+
+/*-----------------------------------------------
+-----------------middle--------------------------
+----------------------------------------------*/
+
+
+/*------------top middle stuff-------------------*/
+
+/*first body has low index so images, etc. can be on top, body
+does not have anything realy attached to it particularly*/
+
+body {
+    position:relative;
+    z-index: -10;
+}
+
+/*this is what gets displayed when input is used. Visibility is hidden
+then displayed through show and hide jQuery*/
+
+div.hidden-body {
+    width:100%;
+    height:1000px;
+    position: absolute;
+    background: center #ffffff url("images/yes.jpg") repeat;
+    display: none;
+    z-index: 5000;
+}
+
+/*text positioned in proper place, only visible when hidden body is*/
+
+h1.hidden-text-1{
+    position: relative;
+    top:400px;
+    height: 200px;
+    text-align: center;
+    color:orange;
+    font-weight: bold;
+    font-size:40px;
+    z-index: 9999;
+}
+
+/* main background of middle, and its position*/
+div.main{
+    position: relative;
+    top:-40px;
+    z-index: -2;
+    height:500px;
+    background: center #ffffff url("images/hippo.jpg") no-repeat;
+    background-size:900px;
+}
+
+/*-----------middle thingamajigs----------------*/
+
+/*two side images, must-guess is irrelevant name, should be hints or the like*/
+
+div.must-guess img{
+    padding:0;
+    margin:0;
+    display:inline;
+    position:relative;
+    height:350px;
+    width:270px;
+    z-index:-1;
+}
+
+#to-the-right{
+    left:750px;
+}
+
+
+/*----------important center buttons----------------*/
+
+/*nicely circular input box thing with picture of me all handsome like
+and the lil input next to it*/
+
+input#number{
+    position: relative;
+    text-align:center;
+    height:200px;
+    width:200px;
+    color:#2F4F4F;
+    background: center #ffffff url("images/pinal-dave.jpg") repeat;
+    font-size:50px;
+    z-index: 10;
+    border-radius:100%;
+}
+button.btn.btn-success{
+    position: relative;
+    border-radius: 50%;
+    z-index: 11;
+    height:50px;
+    top:40px;
+    right:80px;
+}
+
+/*            buttons and things              */
+
+/*reset button is danger. btn-md left and right are the buttons 
+that do nothing but look nice and say things from the odd birds
+Maybe should disable but it looks and feels more dull*/
+
+input.btn.btn-danger {
+    position: relative;
+    bottom:300px;
+    left:870px;
+    border-radius: 30%;
+}
+
+button.btn.btn-primary.btn-md {
+    position: absolute;
+    bottom:370px;
+}
+button.btn.btn-primary.btn-md.left {
+    left:200px;
+}
+button.btn.btn-primary.btn-md.right {
+    left:930px;
+}
+
+/*of course the hippos got things to say also*/
+
+ div.hippo-talk {
+    text-align: right;
+    position: relative;
+    display: inline;
+    bottom:70px;
+    left:20px;
+    z-index: 1000;
+    border-radius: 20%;
+    color:pink;
+    font-size: 30px;
+    border-color: black;
+    border:2px;
+    background-color: gray;
+}
+
+
+
+/*--------------------------------------------------
+--------------------bottom-------------------------
+---------------------------------------------------*/
+
+/*bottom 0 lifts it up a bit. main background repeated of gorilla
+saying stuff. in middle used to be pinal-dave (now hes in the input box)
+but decided that other thing is better margin 0 auto, etc is to center*/
+
+#footer {
+    background: #ffffff url("images/hurry.jpg") repeat;
+    background-size:325px;
+    width: 100%;
+    border-top: solid 2px black;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+.pinal-dave img {
+    position:relative;
+    display: block;
+    margin: 0 auto;    
+    height:165px;
+    width:175px;
+    text-align:center;
+}
+
+div.guess{
+    font: oblique small-caps bold 33px/150% Arial, Helvetica, sans-serif;
+    color:cyan;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!--stylesheet,bootstrap, and jQuery-->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+  <!--body hidden within at a lower z-index until displayed, z-index exponentially increases-->
+
+  <div class='hidden-body'>
+      <h1 class='hidden-text-1'></h1>
+  </div>
+
+  <!--here is the top part of the page, I desired: top,middle,bottom for interspaced ridiculous images,etc. words-->
+
+       <div class='jumbotron'>
+
+          <h2 class='h2specific'>Universe Recommended Guessing Game, Emu no like it</h2>
+          <p></p><p></p>
+          <p class='pspecific'>The Universe ie. Daddy-O - 'Best out of all universes'</p>
+          <p class='pspecific'>Emu ie. Extra-Muscle-downUnder - 'Its crab shit.'</p>
+
+      </div>
+
+      <!--middle part. Contains the main field. Its input, a reset button, hints, previous guesses part, 3 different images positioned correctly.-->
+
+      <div class='main'>
+
+        <div class='must-guess'>
+
+          <img src='images/guess.jpg'>
+          <img id='to-the-right' src='images/guess.jpg'>
+          <input id='number' type='number' placeholder=":-J" min='1' max='100' autofocus='true'>
+          <button type="submit" class="btn btn-success">U gun b wrong</button>
+
+      </div>
+
+
+      <div class=buttons-things>
+
+        <input type="reset" class="btn btn-danger" value='I dare you!'>I dare you!</input>
+
+        <button type="button" class="btn btn-primary btn-md left">I tell you thing</button>
+        <button type="button" class="btn btn-primary btn-md right">Me too, thing I tell</button>
+
+
+        <div class='hippo-talk'>I got something to say</div>
+
+    <!--bottom part. background-image repeated with words positioned in proper place. Center image that has solely comedic purposes, honestly that is just about all the head and foot does, but it forces the shape of the box, so I kept it.-->
+
+    <div id='footer'>
+
+          <div class='guess'>&emsp;&emsp;&emsp;Guess!!!&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You must!!!&emsp;&emsp;&emsp;&emsp;&emsp;I watch!!!!&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Do it!!!!</div>
+          <div class='pinal-dave'>
+            <img class='img-rounded' src='images/game.jpg'>
+          </div>
+        </div>
+
+    </div>
+
+    <!-- javascript -->
+
+    <script src='GuessingGame.js'></script>
+
+  </body>
+</html>        
