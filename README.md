@@ -18,3 +18,7 @@ a few minutes of your time. Nonetheless, it is purely unique and you may, pardon
 sounding like an old folk for a moment, get a kick out of it.
 
 Thanks for checking this out and if you give it a try, hope you get a few laughs!
+
+Open this! 
+
+https://jmuzsik.github.io/GuessingGame/
